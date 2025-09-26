@@ -1,0 +1,297 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susmita Yadav - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Inline CSS for loader and no-js fallback -->
+    <style>
+        .loading { transition: opacity 0.3s ease; }
+        .loading.hidden { opacity: 0; display: none; }
+        body.no-js .fade-in,
+        body.no-js .slide-left,
+        body.no-js .slide-right,
+        body.no-js .hero-title,
+        body.no-js .hero-subtitle,
+        body.no-js .hero-description,
+        body.no-js .hero-buttons,
+        body.no-js .profile-card {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+    </style>
+</head>
+<body class="no-js">
+    <!-- Loading Animation -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">Susmita</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Susmita Yadav</span></h1>
+                <h2 class="hero-subtitle">Python Developer & AI Enthusiast</h2>
+                <p class="hero-description">
+                    Dynamic professional with expertise in Python programming and machine learning, complemented by strong skills in public relations and active listening. Demonstrates a willingness to learn and aims to leverage technical and interpersonal abilities to drive innovation and success in future endeavors.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="profile.jpg" alt="Susmita Yadav" onerror="this.src='https://via.placeholder.com/200';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am currently pursuing Computer Science and Engineering in Artificial Intelligence at Babu Banarasi Das University, Lucknow, from 01/2023 to 01/2027.</p>
+                    <p>My educational journey includes a Bachelor of Technology (2027) with coursework in Artificial Intelligence and Data Science from Babu Banarasi Das University, Lucknow, UP. I completed my Intermediate (01/2022) and High School (01/2020) at Saraswati Balika Vidya Mandir.</p>
+                </div>
+                <div class="about-img-wrapper">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 4h16v2H4V4zm2 4h12v2H6V8zm2 4h8v2H8v-2zm-4 4h16v4H4v-4z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <h3 data-target="4">4+</h3>
+                    <p>Years of Learning</p>
+                </div>
+                <div class="stat">
+                    <h3 data-target="5">5+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h3 data-target="3">3+</h3>
+                    <p>Certifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="container">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                        <span>Python</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                        <span>Machine Learning</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                        <span>Python Programming</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16v2H4V4zm2 4h12v2H6V8zm2 4h8v2H8v-2zm-4 4h16v4H4v-4z"/>
+                        </svg>
+                        <span>Willingness to Learn</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                        <span>Active Listening</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15 3H9v2h6V3zm0 4H9v2h6V7zm0 4H9v2h6v-2zm0 4H9v2h6v-2zm-7 4H4v2h4v-2zm12 0h-4v2h4v-2z"/>
+                        </svg>
+                        <span>Public Relations</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v2H8V8zm0 4h8v2H8v-2zm0 4h8v2H8v-2z"/>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Placeholder 1</h3>
+                        <p>Description of a project related to AI or Python development.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                        </svg>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Lucknow, 226028</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9572445710</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <div>
+                            <h4>Email</h4>
+                            <p>yadavsusmita623@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.14 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.36-1.34-3.36-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0112 6.8c.85.004 1.71.11 2.52.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.56.92.56 1.85v2.74c0 .26.19.57.69.49C19.13 20.14 22 16.41 22 12c0-5.52-4.48-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.46 6c-.77.34-1.59.57-2.46.67 1.88-1.13 3.33-2.92 4-5.04-.88.52-1.85.88-2.89 1.08C20.25 1.68 18.92.99 17.5.99c-2.83 0-5.12 2.29-5.12 5.12 0 .4.04.79.13 1.16C8.37 6.06 4.69 3.99 2.1 1.01.92 3.07.46 5.64 1.2 7.96c-.74-.23-1.43-.58-2.03-1.01 0 0 0 0 0 .01C-.15 8.96.11 11.38 1.18 13.22c-.65-.18-1.26-.51-1.8-.84v.05c0 2.4 1.71 4.4 3.97 4.86-.69.19-1.42.29-2.17.29-.53 0-1.04-.05-1.54-.15 1.04 3.25 4.06 5.61 7.64 5.67-2.79 2.19-6.3 3.5-10.13 3.5-.66 0-1.31-.04-1.95-.12 3.62 2.32 7.92 3.67 12.55 3.67 15.06 0 23.3-12.48 23.3-23.3 0-.36-.01-.71-.03-1.06 1.6-1.15 2.99-2.59 4.09-4.23-.83.37-1.72.62-2.65.73z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required>
+                        <label>Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Susmita Yadav. All rights reserved.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+    <!-- Inline JS to ensure loader hides -->
+    <script>
+        window.addEventListener('load', function() {
+            console.log('portfolio.html loaded');
+            const loader = document.getElementById('loading');
+            if (loader) {
+                setTimeout(() => {
+                    console.log('Hiding loader');
+                    loader.classList.add('hidden');
+                }, 500);
+            }
+            document.body.classList.remove('no-js');
+        });
+    </script>
+</body>
+</html>
